@@ -10,6 +10,7 @@ public class HelloSpringApplication {
 
 		SpringApplication.run(HelloSpringApplication.class, args);
 		System.out.println("test start");
+		System.out.println("one more test");
 	}
 
 }
