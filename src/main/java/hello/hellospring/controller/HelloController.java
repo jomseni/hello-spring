@@ -41,12 +41,12 @@ public class HelloController {
     static class Hello{
         private String name;
 
-        public String getName(){ //꺼낼때는 getname
+        public String getName(){                //꺼낼때는 getname
 
             return name;
         }
 
-        public void setName(String name){ //넣을때는 setname
+        public void setName(String name){       //넣을때는 setname
             this.name = name;
         }
     }

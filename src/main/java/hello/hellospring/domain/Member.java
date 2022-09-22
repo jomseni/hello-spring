@@ -18,5 +18,6 @@ public class Member {
     }
 
     public void setName(String spring) {
+        this.name = spring;
     }
 }
