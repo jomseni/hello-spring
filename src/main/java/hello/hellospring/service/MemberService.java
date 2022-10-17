@@ -12,8 +12,11 @@ public class MemberService {
     //회원 서비스를 하려면 회원 데이터가 필요하므로 repository가 필요하다! 객체 생성해준다
     //객체 생성할땐 클래스의 이름만 들어갈 수 있다.
     //interface의 이름은 들어갈수 없으므로  객체 생성자의 이름은 MemoryMemberRepository가 되는 것이다.
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
 
+    public MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
     //회원가입//
     public Long join(Member member){
 
